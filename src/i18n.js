@@ -115,7 +115,7 @@ const resources = {
       "header.portfolio": "معرض الأعمال",
       "header.about": "من نحن",
       "header.contact": "اتصل بنا",
-      "header.phone": "(555) 123-4567",
+      "header.phone": "+201011053973",
       "header.getEstimate": "احصل على تقدير مجاني",
       
       // Hero Section

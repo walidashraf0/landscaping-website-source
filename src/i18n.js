@@ -104,7 +104,7 @@ const resources = {
       "footer.copyright": "© 2025 GreenScape Landscaping. All rights reserved.",
       
       // Common
-      "common.brandName": "GreenScape"
+      "common.brandName": "El Walid"
     }
   },
   ar: {
@@ -208,7 +208,7 @@ const resources = {
       "footer.copyright": "© 2025 جرين سكيب لتنسيق الحدائق. جميع الحقوق محفوظة.",
       
       // Common
-      "common.brandName": "جرين سكيب"
+      "common.brandName": "الوليد"
     }
   }
 };

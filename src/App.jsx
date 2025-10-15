@@ -731,7 +731,7 @@ function App() {
                 <li className="text-gray-400">info@greenscape.com</li>
                 <li>
                   <a
-                    href="https://wa.me/15551234567"
+                    href="https://wa.me/+201011053973"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-green-600 hover:text-green-500 transition-colors"

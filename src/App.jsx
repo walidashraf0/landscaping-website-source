@@ -139,6 +139,36 @@ function App() {
       category: t("portfolio.beforeAfter"),
     },
     {
+      image: img7,
+      title: t("portfolio.lawnRenovation"),
+      category: t("portfolio.beforeAfter"),
+    },
+    {
+      image: img8,
+      title: t("portfolio.lawnRenovation"),
+      category: t("portfolio.beforeAfter"),
+    },
+    {
+      image: img7,
+      title: t("portfolio.lawnRenovation"),
+      category: t("portfolio.beforeAfter"),
+    },
+    {
+      image: img8,
+      title: t("portfolio.lawnRenovation"),
+      category: t("portfolio.beforeAfter"),
+    },
+    {
+      image: img9,
+      title: t("portfolio.lawnRenovation"),
+      category: t("portfolio.beforeAfter"),
+    },
+    {
+      image: img9,
+      title: t("portfolio.lawnRenovation"),
+      category: t("portfolio.beforeAfter"),
+    },
+    {
       image: img9,
       title: t("portfolio.lawnRenovation"),
       category: t("portfolio.beforeAfter"),

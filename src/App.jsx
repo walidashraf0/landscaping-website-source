@@ -21,6 +21,7 @@ import {
   Users,
   Clock,
   Globe,
+  PhoneCall,
 } from "lucide-react";
 import "./App.css";
 import img1 from "./assets/images/img1.jpg";
@@ -757,7 +758,7 @@ function App() {
         className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg hover:shadow-xl transition-all duration-300 z-50"
         aria-label="Contact us on WhatsApp"
       >
-        <MessageCircle className="w-6 h-6" />
+        <PhoneCall className="w-6 h-6" />
       </a>
     </div>
   );

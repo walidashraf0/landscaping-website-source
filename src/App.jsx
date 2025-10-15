@@ -32,12 +32,22 @@ import img5 from "./assets/images/img5.jpeg";
 import img6 from "./assets/images/img6.jpeg";
 import img7 from "./assets/images/img7.jpg";
 import img8 from "./assets/images/img8.webp";
-import img9 from "./assets/images/img9.jpg";
+import img10 from "./assets/images/img10.webp";
+import img11 from "./assets/images/img11.jpeg";
+import img12 from "./assets/images/img12.jpeg";
+import img13 from "./assets/images/img13.jpeg";
+import img14 from "./assets/images/img14.jpeg";
+import img15 from "./assets/images/img15.jpeg";
+import img16 from "./assets/images/img16.jpeg";
+import img17 from "./assets/images/img17.jpeg";
+import img18 from "./assets/images/img18.jpg";
+import img19 from "./assets/images/img19.jpeg";
 import summerLandscapeDesign from "./assets/images/summer_landscape_design.jpg";
 
 function App() {
   const { t, i18n } = useTranslation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -139,37 +149,52 @@ function App() {
       category: t("portfolio.beforeAfter"),
     },
     {
-      image: img7,
+      image: img10,
       title: t("portfolio.lawnRenovation"),
       category: t("portfolio.beforeAfter"),
     },
     {
-      image: img8,
+      image: img11,
       title: t("portfolio.lawnRenovation"),
       category: t("portfolio.beforeAfter"),
     },
     {
-      image: img7,
+      image: img12,
       title: t("portfolio.lawnRenovation"),
       category: t("portfolio.beforeAfter"),
     },
     {
-      image: img8,
+      image: img13,
       title: t("portfolio.lawnRenovation"),
       category: t("portfolio.beforeAfter"),
     },
     {
-      image: img9,
+      image: img14,
       title: t("portfolio.lawnRenovation"),
       category: t("portfolio.beforeAfter"),
     },
     {
-      image: img9,
+      image: img15,
       title: t("portfolio.lawnRenovation"),
       category: t("portfolio.beforeAfter"),
     },
     {
-      image: img9,
+      image: img16,
+      title: t("portfolio.lawnRenovation"),
+      category: t("portfolio.beforeAfter"),
+    },
+    {
+      image: img17,
+      title: t("portfolio.lawnRenovation"),
+      category: t("portfolio.beforeAfter"),
+    },
+    {
+      image: img18,
+      title: t("portfolio.lawnRenovation"),
+      category: t("portfolio.beforeAfter"),
+    },
+    {
+      image: img19,
       title: t("portfolio.lawnRenovation"),
       category: t("portfolio.beforeAfter"),
     },
@@ -436,11 +461,30 @@ function App() {
             </p>
           </div>
 
+          {/* Full-screen overlay for image preview */}
+          {selectedImage && (
+            <div className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4">
+              <button
+                onClick={() => setSelectedImage(null)}
+                className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors"
+                aria-label="Close image preview"
+              >
+                <X className="w-8 h-8" />
+              </button>
+              <img
+                src={selectedImage}
+                alt="Full screen preview"
+                className="max-w-full max-h-full object-contain rounded-lg"
+              />
+            </div>
+          )}
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {portfolio.map((project, index) => (
               <div
                 key={index}
-                className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300"
+                className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer"
+                onClick={() => setSelectedImage(project.image)}
               >
                 <img
                   src={project.image}
@@ -785,7 +829,7 @@ function App() {
         href="https://wa.me/+201011053973"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg hover:shadow-xl transition-all duration-300 z-50"
+        className="fixed top-[50%] md:top-auto md:bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg hover:shadow-xl transition-all duration-300 z-50"
         aria-label="Contact us on WhatsApp"
       >
         <PhoneCall className="w-6 h-6" />
